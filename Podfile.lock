@@ -1,0 +1,96 @@
+PODS:
+  - Alamofire (5.1.0)
+  - BMPlayer (1.3.1):
+    - BMPlayer/Full (= 1.3.1)
+  - BMPlayer/Core (1.3.1)
+  - BMPlayer/Full (1.3.1):
+    - BMPlayer/Core
+    - NVActivityIndicatorView (~> 4.7.0)
+    - SnapKit (~> 5.0.0)
+  - FDFullscreenPopGesture (1.1)
+  - HandyJSON (5.0.2-beta)
+  - IBAnimatable (6.1.0)
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
+  - lottie-ios (3.1.6)
+  - MJRefresh (3.4.1)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SGPagingView (1.6.7)
+  - SnapKit (5.0.1)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+  - SVProgressHUD (2.2.5)
+  - SwiftTheme (0.5.2)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.1)
+  - BMPlayer
+  - FDFullscreenPopGesture
+  - HandyJSON (~> 5.0.2-beta)
+  - IBAnimatable
+  - Kingfisher
+  - lottie-ios
+  - MJRefresh
+  - RxCocoa
+  - RxSwift
+  - SGPagingView
+  - SQLite.swift
+  - SVProgressHUD
+  - SwiftTheme
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - BMPlayer
+    - FDFullscreenPopGesture
+    - HandyJSON
+    - IBAnimatable
+    - Kingfisher
+    - lottie-ios
+    - MJRefresh
+    - NVActivityIndicatorView
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SGPagingView
+    - SnapKit
+    - SQLite.swift
+    - SVProgressHUD
+    - SwiftTheme
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  BMPlayer: f822f82a14026ad0fcc10b4e49090c486841dd12
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  HandyJSON: e18b035d60cb4847c609a59bb831c5db8c549663
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+  lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
+  MJRefresh: 3153c59a363159092c08b2177ec3a7d09f90bfaf
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SGPagingView: 21152cbb9e25a7259ea2415b028c22f55f362ea2
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftTheme: 8b02c479bb4441b2b6790ac126e961b1b6fb0932
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 6038d14e52fd42af44f70751596be5f2ae91c37a
+
+COCOAPODS: 1.9.1

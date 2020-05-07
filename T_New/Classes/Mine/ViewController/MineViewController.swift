@@ -9,7 +9,11 @@
 import UIKit
 
 class MineViewController: UITableViewController {
-
+    
+    
+    var sections = [[MyCellModel]]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
@@ -17,13 +21,14 @@ class MineViewController: UITableViewController {
         tableView.tableFooterView = UIView()
         tableView.backgroundColor = UIColor.globalBackgroundColor()
         
+        tableView.register(UINib(nibName: String(describing: MyOtherCell.self), bundle: nil), forCellReuseIdentifier: String(describing: MyOtherCell.self))
+        
+        
         NetworkTool.loadMyCellData { (sectionArr) in
             
             print(sectionArr.count)
-            
-            for item in sectionArr{
-                
-            }
+            self.sections = sectionArr
+            self.tableView.reloadData()
         }
     }
 }
@@ -31,17 +36,22 @@ class MineViewController: UITableViewController {
 
 extension MineViewController{
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return sections[section].count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cellId")
-        cell.textLabel?.text = "测试"
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MyOtherCell.self)) as! MyOtherCell
+        cell.selectionStyle = .none
+        let section = sections[indexPath.section]
+        let cellModel = section[indexPath.row]
+        cell.textLabel?.text = cellModel.text
+        cell.leftLabel.text = cellModel.text
+        cell.rightLabel.text = cellModel.grey_text
         return cell
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return sections.count
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -52,5 +62,9 @@ extension MineViewController{
         let view = UIView(frame: CGRect(x: 0, y: 0, width: screenW, height: 10))
         view.backgroundColor = UIColor.globalBackgroundColor()
         return view
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
     }
 }

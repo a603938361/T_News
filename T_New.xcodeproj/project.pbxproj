@@ -23,6 +23,8 @@
 		856CB4592463F68F00256C81 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CB4582463F68F00256C81 /* UIColor+Extension.swift */; };
 		856CB45C2463FB4800256C81 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CB45B2463FB4800256C81 /* NetworkTool.swift */; };
 		856CB45E24640DD900256C81 /* MyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CB45D24640DD900256C81 /* MyCellModel.swift */; };
+		856CB46124642C8D00256C81 /* MyOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CB45F24642C8D00256C81 /* MyOtherCell.swift */; };
+		856CB46224642C8D00256C81 /* MyOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856CB46024642C8D00256C81 /* MyOtherCell.xib */; };
 		A4357186BC1AC12DF6497B9C /* Pods_T_New.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B69E1C84160FC38A079704C /* Pods_T_New.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		856CB4582463F68F00256C81 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		856CB45B2463FB4800256C81 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		856CB45D24640DD900256C81 /* MyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellModel.swift; sourceTree = "<group>"; };
+		856CB45F24642C8D00256C81 /* MyOtherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOtherCell.swift; sourceTree = "<group>"; };
+		856CB46024642C8D00256C81 /* MyOtherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOtherCell.xib; sourceTree = "<group>"; };
 		9B69E1C84160FC38A079704C /* Pods_T_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89B24BA7CAABB87A21346DB /* Pods-T_New.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T_New.debug.xcconfig"; path = "Target Support Files/Pods-T_New/Pods-T_New.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -245,6 +249,8 @@
 		856CB4482463E2E900256C81 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				856CB45F24642C8D00256C81 /* MyOtherCell.swift */,
+				856CB46024642C8D00256C81 /* MyOtherCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -341,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				856CB46224642C8D00256C81 /* MyOtherCell.xib in Resources */,
 				856CB41B2463ACA300256C81 /* LaunchScreen.storyboard in Resources */,
 				856CB4182463ACA300256C81 /* Assets.xcassets in Resources */,
 				856CB4162463AC9E00256C81 /* Main.storyboard in Resources */,
@@ -408,6 +415,7 @@
 				856CB4502463E2E900256C81 /* NavigationController.swift in Sources */,
 				856CB44B2463E2E900256C81 /* HomeViewController.swift in Sources */,
 				856CB4532463E2E900256C81 /* MineViewController.swift in Sources */,
+				856CB46124642C8D00256C81 /* MyOtherCell.swift in Sources */,
 				856CB44E2463E2E900256C81 /* MyTabbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

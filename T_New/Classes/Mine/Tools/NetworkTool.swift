@@ -14,7 +14,7 @@ protocol NetworkToolPro {
     //--------------- mine -------------
     
     static func loadMyCellData(completionHandler: @escaping (_ sections:[[MyCellModel]])->())
-    static func loadMyConcern()
+    static func loadMyConcern(completionHandler: @escaping (_ sections:[MyConcern])->())
     
 }
 
@@ -41,6 +41,7 @@ struct NetworkTool: NetworkToolPro{
                             var sectionArr = [AnyObject]()
                             
                             for item in dataArr {
+                                
                                 var tempDataArr = [MyCellModel]()
                                 for row in item.arrayObject ?? [] {
                                     let cellModel = MyCellModel.deserialize(from: row as? Dictionary)
@@ -53,12 +54,32 @@ struct NetworkTool: NetworkToolPro{
                     }
             case let .failure(error):
                 print(error)
-                
             }
         }
     }
     
-    static func loadMyConcern() {
-        
+    static func loadMyConcern(completionHandler: @escaping (_ sections:[MyConcern])->()){
+        let url = BASE_URL + "/concern/v2/follow/my_follow/?"
+        let params = ["device_id": device_id]
+        //https://is.snssdk.com/concern/v2/follow/my_follow/?&device_id=6096495334
+        AF.request(url, parameters: params).responseJSON { (response) in
+            
+            switch response.result{
+                case let .success(res):
+                    let json = JSON(res)
+                    
+                    if let data = json["data"].arrayObject {
+                        var concernArr = [MyConcern]()
+                        
+                        for item in data {
+                            let model = MyConcern.deserialize(from: item as? Dictionary)
+                            concernArr.append(model!)
+                        }
+                        completionHandler(concernArr)
+                    }
+            case let .failure(error):
+                print(error)
+            }
+        }
     }
 }

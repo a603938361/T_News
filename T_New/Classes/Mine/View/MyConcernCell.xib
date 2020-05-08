@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyConcernCell" customModule="T_New" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="103" height="128"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ihc-Du-4y2">
+                        <rect key="frame" x="0.0" y="10" width="103" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="Hg5-R1-0DF"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrt-eE-wNz">
+                        <rect key="frame" x="79" y="10" width="18" height="17"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="Bfy-s9-JUR"/>
+                            <constraint firstAttribute="width" constant="18" id="dyB-Gk-tg3"/>
+                        </constraints>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="all_v_avatar_18x18_" translatesAutoresizingMaskIntoConstraints="NO" id="loe-ZE-MnQ">
+                        <rect key="frame" x="82" y="51" width="13" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="eMB-iz-sTp"/>
+                            <constraint firstAttribute="height" constant="29" id="sY8-Yt-csu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fc-K3-tg6">
+                        <rect key="frame" x="0.0" y="104" width="103" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="otu-Eh-ASq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3Fc-K3-tg6" secondAttribute="bottom" id="3Md-Nu-7e8"/>
+                <constraint firstItem="qrt-eE-wNz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="EfM-tc-53o"/>
+                <constraint firstItem="Ihc-Du-4y2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Icy-cp-VRD"/>
+                <constraint firstAttribute="trailing" secondItem="loe-ZE-MnQ" secondAttribute="trailing" constant="8" id="JNM-NJ-Zcp"/>
+                <constraint firstAttribute="trailing" secondItem="3Fc-K3-tg6" secondAttribute="trailing" id="Lm4-M1-2KR"/>
+                <constraint firstItem="Ihc-Du-4y2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qgq-V5-pK9"/>
+                <constraint firstItem="loe-ZE-MnQ" firstAttribute="bottom" secondItem="Ihc-Du-4y2" secondAttribute="bottom" id="eAe-f0-vfH"/>
+                <constraint firstAttribute="trailing" secondItem="Ihc-Du-4y2" secondAttribute="trailing" id="gff-kk-7bG"/>
+                <constraint firstItem="3Fc-K3-tg6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sGh-gm-b9e"/>
+                <constraint firstAttribute="trailing" secondItem="qrt-eE-wNz" secondAttribute="trailing" constant="6" id="sQN-yO-JaC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="103" height="128"/>
+            <connections>
+                <outlet property="avaImage" destination="Ihc-Du-4y2" id="IfR-Tt-uGr"/>
+                <outlet property="nameL" destination="3Fc-K3-tg6" id="HdY-k8-cix"/>
+                <outlet property="tipsBtn" destination="qrt-eE-wNz" id="har-Mj-B6g"/>
+                <outlet property="vipImageV" destination="loe-ZE-MnQ" id="J0F-TI-W9k"/>
+            </connections>
+            <point key="canvasLocation" x="-238.40579710144928" y="-27.455357142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="all_v_avatar_18x18_" width="18" height="18"/>
+    </resources>
+</document>

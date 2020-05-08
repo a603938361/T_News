@@ -25,6 +25,15 @@
 		856CB45E24640DD900256C81 /* MyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CB45D24640DD900256C81 /* MyCellModel.swift */; };
 		856CB46124642C8D00256C81 /* MyOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CB45F24642C8D00256C81 /* MyOtherCell.swift */; };
 		856CB46224642C8D00256C81 /* MyOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856CB46024642C8D00256C81 /* MyOtherCell.xib */; };
+		856CB4652464F12D00256C81 /* MyFollowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CB4632464F12D00256C81 /* MyFollowCell.swift */; };
+		856CB4662464F12D00256C81 /* MyFollowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856CB4642464F12D00256C81 /* MyFollowCell.xib */; };
+		856CB4682464F8C800256C81 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CB4672464F8C800256C81 /* UIView+Extension.swift */; };
+		856CB46A2464F8DD00256C81 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CB4692464F8DD00256C81 /* UITableView+Extension.swift */; };
+		856CB46C2464F8F400256C81 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CB46B2464F8F400256C81 /* UICollectionView+Extension.swift */; };
+		856CB46F24652CB000256C81 /* MyConcernCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CB46D24652CAE00256C81 /* MyConcernCell.swift */; };
+		856CB47024652CB000256C81 /* MyConcernCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856CB46E24652CAE00256C81 /* MyConcernCell.xib */; };
+		856CB4722465452200256C81 /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CB4712465452200256C81 /* NoLoginHeaderView.swift */; };
+		856CB4742465452E00256C81 /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856CB4732465452E00256C81 /* NoLoginHeaderView.xib */; };
 		A4357186BC1AC12DF6497B9C /* Pods_T_New.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B69E1C84160FC38A079704C /* Pods_T_New.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +59,15 @@
 		856CB45D24640DD900256C81 /* MyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellModel.swift; sourceTree = "<group>"; };
 		856CB45F24642C8D00256C81 /* MyOtherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOtherCell.swift; sourceTree = "<group>"; };
 		856CB46024642C8D00256C81 /* MyOtherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOtherCell.xib; sourceTree = "<group>"; };
+		856CB4632464F12D00256C81 /* MyFollowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFollowCell.swift; sourceTree = "<group>"; };
+		856CB4642464F12D00256C81 /* MyFollowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFollowCell.xib; sourceTree = "<group>"; };
+		856CB4672464F8C800256C81 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		856CB4692464F8DD00256C81 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		856CB46B2464F8F400256C81 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		856CB46D24652CAE00256C81 /* MyConcernCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcernCell.swift; sourceTree = "<group>"; };
+		856CB46E24652CAE00256C81 /* MyConcernCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyConcernCell.xib; sourceTree = "<group>"; };
+		856CB4712465452200256C81 /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
+		856CB4732465452E00256C81 /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
 		9B69E1C84160FC38A079704C /* Pods_T_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89B24BA7CAABB87A21346DB /* Pods-T_New.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T_New.debug.xcconfig"; path = "Target Support Files/Pods-T_New/Pods-T_New.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,6 +269,12 @@
 			children = (
 				856CB45F24642C8D00256C81 /* MyOtherCell.swift */,
 				856CB46024642C8D00256C81 /* MyOtherCell.xib */,
+				856CB4632464F12D00256C81 /* MyFollowCell.swift */,
+				856CB4642464F12D00256C81 /* MyFollowCell.xib */,
+				856CB46D24652CAE00256C81 /* MyConcernCell.swift */,
+				856CB46E24652CAE00256C81 /* MyConcernCell.xib */,
+				856CB4712465452200256C81 /* NoLoginHeaderView.swift */,
+				856CB4732465452E00256C81 /* NoLoginHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -267,6 +291,9 @@
 			isa = PBXGroup;
 			children = (
 				856CB4582463F68F00256C81 /* UIColor+Extension.swift */,
+				856CB4672464F8C800256C81 /* UIView+Extension.swift */,
+				856CB4692464F8DD00256C81 /* UITableView+Extension.swift */,
+				856CB46B2464F8F400256C81 /* UICollectionView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -348,9 +375,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				856CB46224642C8D00256C81 /* MyOtherCell.xib in Resources */,
+				856CB4662464F12D00256C81 /* MyFollowCell.xib in Resources */,
 				856CB41B2463ACA300256C81 /* LaunchScreen.storyboard in Resources */,
 				856CB4182463ACA300256C81 /* Assets.xcassets in Resources */,
+				856CB47024652CB000256C81 /* MyConcernCell.xib in Resources */,
 				856CB4162463AC9E00256C81 /* Main.storyboard in Resources */,
+				856CB4742465452E00256C81 /* NoLoginHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,10 +433,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				856CB46F24652CB000256C81 /* MyConcernCell.swift in Sources */,
+				856CB46C2464F8F400256C81 /* UICollectionView+Extension.swift in Sources */,
 				856CB44C2463E2E900256C81 /* VideoViewController.swift in Sources */,
+				856CB4652464F12D00256C81 /* MyFollowCell.swift in Sources */,
+				856CB4682464F8C800256C81 /* UIView+Extension.swift in Sources */,
 				856CB45E24640DD900256C81 /* MyCellModel.swift in Sources */,
 				856CB45C2463FB4800256C81 /* NetworkTool.swift in Sources */,
 				856CB4562463F5E600256C81 /* Consts.swift in Sources */,
+				856CB4722465452200256C81 /* NoLoginHeaderView.swift in Sources */,
+				856CB46A2464F8DD00256C81 /* UITableView+Extension.swift in Sources */,
 				856CB4522463E2E900256C81 /* TabBarController.swift in Sources */,
 				856CB4592463F68F00256C81 /* UIColor+Extension.swift in Sources */,
 				856CB44F2463E2E900256C81 /* AppDelegate.swift in Sources */,

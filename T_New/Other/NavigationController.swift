@@ -17,15 +17,15 @@ class NavigationController: UINavigationController {
         // Do any additional setup after loading the view.
     }
     
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        super.pushViewController(viewController, animated: true)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if viewControllers.count > 1{
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "lefterbackicon_titlebar_24x24_"), style: .done, target: self, action: #selector(navBack))
+        }
     }
-    */
-
+    
+    @objc func navBack() {
+        popViewController(animated: true)
+    }
 }

@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class MineViewController: UITableViewController {
     
-    
+    private var disposeBag = DisposeBag()
     var sections = [[MyCellModel]]()
     var concerns = [MyConcern]()
     
@@ -51,6 +53,17 @@ class MineViewController: UITableViewController {
                 self.tableView.reloadSections(indexset, with: .automatic)
             }
         }
+        
+        
+        headerView.moreLogin.rx.controlEvent(.touchUpInside)
+            .subscribe(onNext: { [weak self] in
+                let moreLogin = UIStoryboard(name: String(describing: MoreLoginViewController.self), bundle: Bundle.main)
+            let vc = moreLogin.instantiateViewController(withIdentifier: String(describing: MoreLoginViewController.self)) as! MoreLoginViewController
+                
+            vc.modalSize = (.full, .full)
+            self?.present(vc, animated: true, completion: nil)
+            
+            }).disposed(by: disposeBag)
     }
 }
 
@@ -105,5 +118,10 @@ extension MineViewController{
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath)
+        if indexPath.section == 2 && indexPath.row == 1 {
+            let settingVC = SettingTableViewController()
+            settingVC.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(settingVC, animated: true)
+        }
     }
 }

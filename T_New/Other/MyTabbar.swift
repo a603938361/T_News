@@ -14,6 +14,13 @@ class MyTabbar: UITabBar {
     override init(frame: CGRect) {
         super.init(frame:frame)
         addSubview(publishButton)
+        
+        //changeModel
+        NotificationCenter.default.addObserver(self, selector: #selector(changeModel), name: NSNotification.Name(rawValue: "changeModel"), object: nil)
+    }
+    
+    @objc func changeModel() {
+        print("changeModel")
     }
     
     required init?(coder: NSCoder) {
@@ -31,7 +38,7 @@ class MyTabbar: UITabBar {
     override func layoutSubviews() {
         super.layoutSubviews()
         let w = frame.width
-        let h = frame.height
+        let h:CGFloat = 49
         
         publishButton.center = CGPoint(x: w/2, y: h/2 - 10)
         

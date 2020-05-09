@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8517668D246681B700C5D56C /* MoreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8517668C246681B600C5D56C /* MoreLoginViewController.swift */; };
+		8517668F246681D800C5D56C /* MoreLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8517668E246681D800C5D56C /* MoreLoginViewController.storyboard */; };
+		851766912466A49E00C5D56C /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851766902466A49E00C5D56C /* SettingTableViewController.swift */; };
 		856CB4162463AC9E00256C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856CB4142463AC9E00256C81 /* Main.storyboard */; };
 		856CB4182463ACA300256C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856CB4172463ACA300256C81 /* Assets.xcassets */; };
 		856CB41B2463ACA300256C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856CB4192463ACA300256C81 /* LaunchScreen.storyboard */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		1648577A22E377970B7A7D97 /* Pods-T_New.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T_New.release.xcconfig"; path = "Target Support Files/Pods-T_New/Pods-T_New.release.xcconfig"; sourceTree = "<group>"; };
+		8517668C246681B600C5D56C /* MoreLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLoginViewController.swift; sourceTree = "<group>"; };
+		8517668E246681D800C5D56C /* MoreLoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoreLoginViewController.storyboard; sourceTree = "<group>"; };
+		851766902466A49E00C5D56C /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		856CB40B2463AC9E00256C81 /* T_New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T_New.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856CB4152463AC9E00256C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		856CB4172463ACA300256C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -283,6 +289,9 @@
 			isa = PBXGroup;
 			children = (
 				856CB44A2463E2E900256C81 /* MineViewController.swift */,
+				8517668C246681B600C5D56C /* MoreLoginViewController.swift */,
+				8517668E246681D800C5D56C /* MoreLoginViewController.storyboard */,
+				851766902466A49E00C5D56C /* SettingTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -378,6 +387,7 @@
 				856CB4662464F12D00256C81 /* MyFollowCell.xib in Resources */,
 				856CB41B2463ACA300256C81 /* LaunchScreen.storyboard in Resources */,
 				856CB4182463ACA300256C81 /* Assets.xcassets in Resources */,
+				8517668F246681D800C5D56C /* MoreLoginViewController.storyboard in Resources */,
 				856CB47024652CB000256C81 /* MyConcernCell.xib in Resources */,
 				856CB4162463AC9E00256C81 /* Main.storyboard in Resources */,
 				856CB4742465452E00256C81 /* NoLoginHeaderView.xib in Resources */,
@@ -434,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				856CB46F24652CB000256C81 /* MyConcernCell.swift in Sources */,
+				8517668D246681B700C5D56C /* MoreLoginViewController.swift in Sources */,
 				856CB46C2464F8F400256C81 /* UICollectionView+Extension.swift in Sources */,
 				856CB44C2463E2E900256C81 /* VideoViewController.swift in Sources */,
 				856CB4652464F12D00256C81 /* MyFollowCell.swift in Sources */,
@@ -450,6 +461,7 @@
 				856CB44D2463E2E900256C81 /* HuoShanViewController.swift in Sources */,
 				856CB4502463E2E900256C81 /* NavigationController.swift in Sources */,
 				856CB44B2463E2E900256C81 /* HomeViewController.swift in Sources */,
+				851766912466A49E00C5D56C /* SettingTableViewController.swift in Sources */,
 				856CB4532463E2E900256C81 /* MineViewController.swift in Sources */,
 				856CB46124642C8D00256C81 /* MyOtherCell.swift in Sources */,
 				856CB44E2463E2E900256C81 /* MyTabbar.swift in Sources */,

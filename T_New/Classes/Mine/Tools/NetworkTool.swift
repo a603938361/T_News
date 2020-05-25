@@ -11,8 +11,11 @@ import Alamofire
 import SwiftyJSON
 
 protocol NetworkToolPro {
+    //--------------- home -------------
+    static func loadHomeNewsTitleData(completionHandler: @escaping (_ sections:[HomeNewsTitle])->())
+
     //--------------- mine -------------
-    
+
     static func loadMyCellData(completionHandler: @escaping (_ sections:[[MyCellModel]])->())
     static func loadMyConcern(completionHandler: @escaping (_ sections:[MyConcern])->())
     
@@ -23,6 +26,23 @@ extension NetworkToolPro{
 }
 
 struct NetworkTool: NetworkToolPro{
+    
+    
+    static func loadHomeNewsTitleData(completionHandler: @escaping ([HomeNewsTitle]) -> ()) {
+        let url = BASE_URL + "/article/category/get_subscribed/v1/?"
+        let par = ["device_id":device_id, "iid": iid]
+        AF.request(url, parameters: par).responseJSON { (res) in
+            
+            switch res.result{
+            case.success(let re):
+                print(re)
+                break
+            case .failure(let er):
+                print(er)
+                break
+            }
+        }
+    }
     
     static func loadMyCellData(completionHandler: @escaping (_ sections:[[MyCellModel]])->()){
         let url = BASE_URL + "/user/tab/tabs/?"

@@ -16,6 +16,8 @@ class MineViewController: UITableViewController {
     var sections = [[MyCellModel]]()
     var concerns = [MyConcern]()
     
+    var scrollview = UIScrollView()
+    
     lazy var headerView: NoLoginHeaderView = {
         let header = NoLoginHeaderView.headerView()
         return header
@@ -54,18 +56,44 @@ class MineViewController: UITableViewController {
             }
         }
         
-        
-        headerView.moreLogin.rx.controlEvent(.touchUpInside)
-            .subscribe(onNext: { [weak self] in
-                let moreLogin = UIStoryboard(name: String(describing: MoreLoginViewController.self), bundle: Bundle.main)
-            let vc = moreLogin.instantiateViewController(withIdentifier: String(describing: MoreLoginViewController.self)) as! MoreLoginViewController
-                
-            vc.modalSize = (.full, .full)
-            self?.present(vc, animated: true, completion: nil)
-            
+        headerView.moreLogin.rx.tap.subscribe(onNext:{
+                [weak self] in
+                    let moreLogin = UIStoryboard(name: String(describing: MoreLoginViewController.self), bundle: Bundle.main)
+                let vc = moreLogin.instantiateViewController(withIdentifier: String(describing: MoreLoginViewController.self)) as! MoreLoginViewController
+                    
+                vc.modalSize = (.full, .full)
+                self?.present(vc, animated: true, completion: nil)
             }).disposed(by: disposeBag)
+        
     }
 }
+
+
+
+extension MineViewController{
+    
+
+    
+    func testRxSwift() {
+
+        /// scrollview rx
+        scrollview.rx.contentOffset.subscribe(onNext:{ contentOffset in
+            print("11111")
+        }).disposed(by:disposeBag)
+        
+        NotificationCenter.default.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: nil) { (noti) in
+            print(noti)
+        }
+        
+        NotificationCenter.default.rx.notification(UIApplication.willTerminateNotification).subscribe(onNext:{
+            data in
+            print(data)
+        }).disposed(by:disposeBag)
+        
+        
+    }
+}
+
 
 
 extension MineViewController{

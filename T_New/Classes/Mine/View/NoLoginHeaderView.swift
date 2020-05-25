@@ -28,7 +28,6 @@ class NoLoginHeaderView: UIView {
     @IBAction func nightAction(_ sender: Any) {
         print("夜间")
         
-        NotificationCenter.default.publisher(for: Notification.Name(rawValue: "changeModel"), object: nil)
     }
     
     @objc func phoneClick() {
@@ -52,7 +51,6 @@ class NoLoginHeaderView: UIView {
         qq.addTarget(self, action: #selector(qqClick), for: .touchUpInside)
         wechat.addTarget(self, action: #selector(wechatClick), for: .touchUpInside)
         webo.addTarget(self, action: #selector(weboClick), for: .touchUpInside)
-    
     }
     
     

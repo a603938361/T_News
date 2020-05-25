@@ -25,7 +25,7 @@ class NavigationController: UINavigationController {
         }
     }
     
-    @objc func navBack() {
+    @objc private func navBack() {
         popViewController(animated: true)
     }
 }

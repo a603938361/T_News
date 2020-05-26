@@ -13,12 +13,13 @@ import SwiftyJSON
 protocol NetworkToolPro {
     //--------------- home -------------
     static func loadHomeNewsTitleData(completionHandler: @escaping (_ sections:[HomeNewsTitle])->())
+    static func loadUserDetailDongtaiList(userId: Int, maxCursor: Int, completionHandler: @escaping (_ cursor: Int,  _ dongtais:[UserDetailDongtai])->())
 
     //--------------- mine -------------
 
     static func loadMyCellData(completionHandler: @escaping (_ sections:[[MyCellModel]])->())
     static func loadMyConcern(completionHandler: @escaping (_ sections:[MyConcern])->())
-    
+    static func loadUserDetail(userId: Int, completionHandler: @escaping (_ userDetail:UserDetail)->())
 }
 
 extension NetworkToolPro{
@@ -26,6 +27,76 @@ extension NetworkToolPro{
 }
 
 struct NetworkTool: NetworkToolPro{
+    
+    
+    static func loadUserDetailDongtaiList(userId: Int, maxCursor: Int, completionHandler: @escaping (_ cursor: Int,_ dongtais: [UserDetailDongtai]) -> ()){
+        
+        let url = BASE_URL + "/dongtai/list/v15/?"
+        let params = ["user_id": userId,
+                      "max_cursor": maxCursor,
+                      "device_id": device_id,
+                      "iid": iid]
+        AF.request(url, parameters: params).responseJSON { (res) in
+
+            switch res.result{
+            case .success(let data):
+                let json = JSON(data)
+                guard json["message"] == "success" else {return}
+                if let da = json["data"].dictionary {
+                    if let arr = da["data"]?.arrayValue{
+                        var detailArr = [UserDetailDongtai]()
+                        for item in arr {
+                            
+                            let model = UserDetailDongtai.deserialize(from: item as? Dictionary)
+                            
+                        }
+                    }
+                    
+//                    completionHandler(0, )
+                    
+                    /**
+                     
+                     if let data = json["data"].arrayObject {
+                         var concernArr = [MyConcern]()
+                         
+                         for item in data {
+                             let model = MyConcern.deserialize(from: item as? Dictionary)
+                             concernArr.append(model!)
+                         }
+                         completionHandler(concernArr)
+                     }
+                     
+                     */
+                    
+                    
+                }
+            case .failure(let err):
+                print(err)
+            }
+        }
+    }
+
+    
+    /// 获取用户详情数据
+    /// - parameter userId: 用户id
+    /// - parameter completionHandler: 返回用户详情数据
+    /// - parameter userDetail:  用户详情数据
+    static func loadUserDetail(userId: Int, completionHandler: @escaping (_ userDetail:UserDetail)->()){
+        let url = BASE_URL + "/user/profile/homepage/v4/?"
+        let params = ["user_id": userId,
+                      "device_id": device_id,
+                      "iid": iid]
+        AF.request(url, parameters: params).responseJSON { (res) in
+            switch res.result {
+            case .success(let data):
+                let json = JSON(data)
+                guard json["message"] == "success" else {return}
+                completionHandler(UserDetail.deserialize(from: json["data"].dictionaryObject)!)
+            case .failure(let err):
+                print(err)
+            }
+        }
+    }
     
     
     static func loadHomeNewsTitleData(completionHandler: @escaping ([HomeNewsTitle]) -> ()) {

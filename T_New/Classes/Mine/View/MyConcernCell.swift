@@ -24,12 +24,10 @@ class MyConcernCell: UICollectionViewCell, RegisterCellOrNib{
         }
     }
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         avaImage.layer.cornerRadius = 5
         avaImage.layer.masksToBounds = true
         // Initialization code
     }
-
 }

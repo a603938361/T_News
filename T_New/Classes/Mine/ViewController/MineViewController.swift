@@ -64,7 +64,6 @@ class MineViewController: UITableViewController {
                 vc.modalSize = (.full, .full)
                 self?.present(vc, animated: true, completion: nil)
             }).disposed(by: disposeBag)
-        
     }
 }
 
@@ -78,7 +77,6 @@ extension MineViewController{
 
         /// scrollview rx
         scrollview.rx.contentOffset.subscribe(onNext:{ contentOffset in
-            print("11111")
         }).disposed(by:disposeBag)
         
         NotificationCenter.default.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: nil) { (noti) in
@@ -89,8 +87,6 @@ extension MineViewController{
             data in
             print(data)
         }).disposed(by:disposeBag)
-        
-        
     }
 }
 
@@ -110,6 +106,7 @@ extension MineViewController{
             followCell.leftLabel.text = "u关注"
             followCell.myConcerns = concerns
             followCell.myCellModel = sections[indexPath.section][indexPath.row]
+            followCell.delegate = self;
             return followCell
         }
         let cell = tableView.t_dequeueReusableCell(indexPath: indexPath) as MyOtherCell
@@ -151,5 +148,19 @@ extension MineViewController{
             settingVC.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(settingVC, animated: true)
         }
+    }
+}
+
+
+extension MineViewController : MyFollowCellDelegate {
+    func clickCollowCell(concern: MyConcern) {
+        print("clickCollowCell")
+        print(concern)
+        
+        let userDetail = UserDetailViewController()
+        userDetail.hidesBottomBarWhenPushed = true
+        userDetail.title = concern.name
+        userDetail.myConcern = concern
+        navigationController?.pushViewController(userDetail, animated: true)
     }
 }

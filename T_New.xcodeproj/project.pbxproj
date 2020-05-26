@@ -43,6 +43,13 @@
 		85FC3514247B972900078568 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85FC3512247B972900078568 /* SettingCell.xib */; };
 		85FC3516247BB28700078568 /* OfflineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC3515247BB28700078568 /* OfflineTableViewController.swift */; };
 		85FC3518247BB38400078568 /* HomeNewsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC3517247BB38400078568 /* HomeNewsTitle.swift */; };
+		85FC3520247CB17900078568 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC351E247CB17900078568 /* UserDetailViewController.swift */; };
+		85FC3521247CB17900078568 /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85FC351F247CB17900078568 /* UserDetailViewController.xib */; };
+		85FC3523247CB85B00078568 /* UserHeaderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC3522247CB85B00078568 /* UserHeaderDetailView.swift */; };
+		85FC3525247CB86200078568 /* UserHeaderDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85FC3524247CB86200078568 /* UserHeaderDetailView.xib */; };
+		85FC3527247CDBAD00078568 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC3526247CDBAD00078568 /* UserDetail.swift */; };
+		85FC3529247D085400078568 /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC3528247D085400078568 /* UIKit+Extension.swift */; };
+		85FC352B247D12A700078568 /* UserDetailDongtai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC352A247D12A700078568 /* UserDetailDongtai.swift */; };
 		A4357186BC1AC12DF6497B9C /* Pods_T_New.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B69E1C84160FC38A079704C /* Pods_T_New.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +93,13 @@
 		85FC3512247B972900078568 /* SettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
 		85FC3515247BB28700078568 /* OfflineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineTableViewController.swift; sourceTree = "<group>"; };
 		85FC3517247BB38400078568 /* HomeNewsTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsTitle.swift; sourceTree = "<group>"; };
+		85FC351E247CB17900078568 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		85FC351F247CB17900078568 /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
+		85FC3522247CB85B00078568 /* UserHeaderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderDetailView.swift; sourceTree = "<group>"; };
+		85FC3524247CB86200078568 /* UserHeaderDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserHeaderDetailView.xib; sourceTree = "<group>"; };
+		85FC3526247CDBAD00078568 /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		85FC3528247D085400078568 /* UIKit+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
+		85FC352A247D12A700078568 /* UserDetailDongtai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailDongtai.swift; sourceTree = "<group>"; };
 		9B69E1C84160FC38A079704C /* Pods_T_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89B24BA7CAABB87A21346DB /* Pods-T_New.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T_New.debug.xcconfig"; path = "Target Support Files/Pods-T_New/Pods-T_New.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -281,6 +295,8 @@
 				856CB45D24640DD900256C81 /* MyCellModel.swift */,
 				85FC350F247B72DD00078568 /* SettingModel.swift */,
 				85FC3517247BB38400078568 /* HomeNewsTitle.swift */,
+				85FC3526247CDBAD00078568 /* UserDetail.swift */,
+				85FC352A247D12A700078568 /* UserDetailDongtai.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,6 +314,8 @@
 				856CB4732465452E00256C81 /* NoLoginHeaderView.xib */,
 				85FC3511247B972900078568 /* SettingCell.swift */,
 				85FC3512247B972900078568 /* SettingCell.xib */,
+				85FC3522247CB85B00078568 /* UserHeaderDetailView.swift */,
+				85FC3524247CB86200078568 /* UserHeaderDetailView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +328,8 @@
 				8517668E246681D800C5D56C /* MoreLoginViewController.storyboard */,
 				851766902466A49E00C5D56C /* SettingTableViewController.swift */,
 				85FC3515247BB28700078568 /* OfflineTableViewController.swift */,
+				85FC351E247CB17900078568 /* UserDetailViewController.swift */,
+				85FC351F247CB17900078568 /* UserDetailViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -329,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				856CB45B2463FB4800256C81 /* NetworkTool.swift */,
+				85FC3528247D085400078568 /* UIKit+Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -402,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				856CB46224642C8D00256C81 /* MyOtherCell.xib in Resources */,
+				85FC3521247CB17900078568 /* UserDetailViewController.xib in Resources */,
 				856CB4662464F12D00256C81 /* MyFollowCell.xib in Resources */,
 				856CB41B2463ACA300256C81 /* LaunchScreen.storyboard in Resources */,
 				856CB4182463ACA300256C81 /* Assets.xcassets in Resources */,
@@ -411,6 +433,7 @@
 				856CB47024652CB000256C81 /* MyConcernCell.xib in Resources */,
 				856CB4162463AC9E00256C81 /* Main.storyboard in Resources */,
 				856CB4742465452E00256C81 /* NoLoginHeaderView.xib in Resources */,
+				85FC3525247CB86200078568 /* UserHeaderDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +489,8 @@
 				856CB46F24652CB000256C81 /* MyConcernCell.swift in Sources */,
 				8517668D246681B700C5D56C /* MoreLoginViewController.swift in Sources */,
 				85FC3513247B972900078568 /* SettingCell.swift in Sources */,
+				85FC3523247CB85B00078568 /* UserHeaderDetailView.swift in Sources */,
+				85FC3529247D085400078568 /* UIKit+Extension.swift in Sources */,
 				856CB46C2464F8F400256C81 /* UICollectionView+Extension.swift in Sources */,
 				856CB44C2463E2E900256C81 /* VideoViewController.swift in Sources */,
 				856CB4652464F12D00256C81 /* MyFollowCell.swift in Sources */,
@@ -474,10 +499,12 @@
 				856CB45C2463FB4800256C81 /* NetworkTool.swift in Sources */,
 				856CB4562463F5E600256C81 /* Consts.swift in Sources */,
 				856CB4722465452200256C81 /* NoLoginHeaderView.swift in Sources */,
+				85FC3520247CB17900078568 /* UserDetailViewController.swift in Sources */,
 				856CB46A2464F8DD00256C81 /* UITableView+Extension.swift in Sources */,
 				85FC3518247BB38400078568 /* HomeNewsTitle.swift in Sources */,
 				856CB4522463E2E900256C81 /* TabBarController.swift in Sources */,
 				856CB4592463F68F00256C81 /* UIColor+Extension.swift in Sources */,
+				85FC352B247D12A700078568 /* UserDetailDongtai.swift in Sources */,
 				856CB44F2463E2E900256C81 /* AppDelegate.swift in Sources */,
 				856CB4512463E2E900256C81 /* SceneDelegate.swift in Sources */,
 				856CB44D2463E2E900256C81 /* HuoShanViewController.swift in Sources */,
@@ -489,6 +516,7 @@
 				856CB46124642C8D00256C81 /* MyOtherCell.swift in Sources */,
 				856CB44E2463E2E900256C81 /* MyTabbar.swift in Sources */,
 				85FC3510247B72DD00078568 /* SettingModel.swift in Sources */,
+				85FC3527247CDBAD00078568 /* UserDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

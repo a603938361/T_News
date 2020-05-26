@@ -8,8 +8,14 @@
 
 import UIKit
 
+protocol MyFollowCellDelegate {
+    func clickCollowCell(concern: MyConcern);
+    
+}
+
 class MyFollowCell: UITableViewCell, RegisterCellOrNib {
 
+    var delegate:MyFollowCellDelegate?
     
     @IBOutlet weak var leftLabel: UILabel!
     @IBOutlet weak var rightLabel: UILabel!
@@ -62,9 +68,9 @@ extension MyFollowCell: UICollectionViewDelegate, UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath)
-    }
-    
+        let con = myConcerns[indexPath.item];
+        delegate?.clickCollowCell(concern: con);
+    }    
 }
 
 class MyConFlowLayout: UICollectionViewFlowLayout {

@@ -16,6 +16,7 @@ extension UIColor{
     }
     
     class func globalBackgroundColor() -> UIColor {
+//        return UIColor(r: 248, g: 249, b: 247)
         return UIColor(r: 248, g: 249, b: 247)
     }
 }

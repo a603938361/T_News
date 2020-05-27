@@ -23,8 +23,15 @@ class UserDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollview.addSubview(userHeaderView)
-        scrollview.contentSize = CGSize(width: screenW, height: 1000)
         
+        userHeaderView.clickCell = {[weak self] data in
+            
+            let detail = DongtaiDetailViewController()
+            detail.hidesBottomBarWhenPushed = true
+            detail.url = data.share_url
+            detail.title = data.group.title
+            self?.navigationController?.pushViewController(detail, animated: true)
+        }
         loadRequest()
     }
 }
@@ -35,6 +42,7 @@ extension UserDetailViewController {
             self.userHeaderDetail = res
             print(res)
             self.userHeaderView.userDetail = res
+            self.scrollview.contentSize = CGSize(width: screenW, height: screenH)
         }
     }
 }

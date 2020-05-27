@@ -278,8 +278,14 @@
                         <constraint firstAttribute="height" constant="44" id="yX1-FE-gFj"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m1K-fq-0sm">
+                    <rect key="frame" x="20" y="298" width="374" height="564"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
             </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
+                <constraint firstItem="m1K-fq-0sm" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="0G6-ew-9GG"/>
                 <constraint firstItem="8Qn-7K-72J" firstAttribute="trailing" secondItem="DPg-pL-5gg" secondAttribute="trailing" id="0IT-cl-cTe"/>
                 <constraint firstItem="oBM-d1-Rqz" firstAttribute="top" secondItem="GnB-mM-CQJ" secondAttribute="bottom" constant="5" id="1PM-XO-hhs"/>
                 <constraint firstItem="c9f-AY-YLs" firstAttribute="top" secondItem="oBM-d1-Rqz" secondAttribute="bottom" constant="5" id="1x2-mB-VAt"/>
@@ -297,8 +303,10 @@
                 <constraint firstItem="0Cn-4l-ov8" firstAttribute="top" secondItem="0dO-kn-Of2" secondAttribute="bottom" constant="1" id="Lhu-N4-TDt"/>
                 <constraint firstItem="c9f-AY-YLs" firstAttribute="centerX" secondItem="GnB-mM-CQJ" secondAttribute="centerX" id="MfW-02-blR"/>
                 <constraint firstItem="Y7x-0n-pUt" firstAttribute="top" secondItem="c9f-AY-YLs" secondAttribute="bottom" constant="15" id="NWe-Sf-fat"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="m1K-fq-0sm" secondAttribute="trailing" constant="20" id="Nfc-li-phx"/>
                 <constraint firstItem="c1z-DK-pmh" firstAttribute="bottom" secondItem="4pt-iE-fKr" secondAttribute="bottom" id="Q0Y-9z-Ei2"/>
                 <constraint firstItem="Oxp-qs-Yj8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="RJg-pZ-ion"/>
+                <constraint firstItem="m1K-fq-0sm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Rtv-QC-M7Y"/>
                 <constraint firstItem="b4x-71-5eD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="TDo-Kn-BbD"/>
                 <constraint firstItem="b4x-71-5eD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Thp-ec-xb8"/>
                 <constraint firstItem="0dO-kn-Of2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="XPg-CS-uja"/>
@@ -315,6 +323,7 @@
                 <constraint firstItem="0dO-kn-Of2" firstAttribute="leading" secondItem="b4x-71-5eD" secondAttribute="trailing" constant="17" id="kp4-fu-etJ"/>
                 <constraint firstItem="8Qn-7K-72J" firstAttribute="leading" secondItem="DPg-pL-5gg" secondAttribute="leading" id="kpO-Pc-yWz"/>
                 <constraint firstItem="c1z-DK-pmh" firstAttribute="centerY" secondItem="4pt-iE-fKr" secondAttribute="centerY" id="mKZ-3m-7li"/>
+                <constraint firstItem="m1K-fq-0sm" firstAttribute="top" secondItem="Oxp-qs-Yj8" secondAttribute="bottom" constant="7.5" id="rlV-f3-ux4"/>
                 <constraint firstItem="0dO-kn-Of2" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="sWr-gG-pav"/>
                 <constraint firstItem="jjb-9R-ltS" firstAttribute="centerY" secondItem="c9f-AY-YLs" secondAttribute="centerY" id="sp9-uL-YFF"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Y7x-0n-pUt" secondAttribute="trailing" constant="20" id="v1c-NV-JvW"/>
@@ -331,12 +340,13 @@
                 <outlet property="jianjieLabel" destination="jjb-9R-ltS" id="R1M-iR-dhy"/>
                 <outlet property="renzhengH" destination="5jc-k6-zvx" id="6b6-UI-erx"/>
                 <outlet property="renzhengLabel" destination="DPg-pL-5gg" id="VYp-wf-37s"/>
+                <outlet property="tableView" destination="m1K-fq-0sm" id="LvT-UD-sQ2"/>
                 <outlet property="topScrollview" destination="Oxp-qs-Yj8" id="LcN-fT-a8d"/>
                 <outlet property="toutiaoNum" destination="zBZ-KD-eJm" id="Wq1-zc-sSk"/>
                 <outlet property="touxiangImg" destination="b4x-71-5eD" id="ZSN-4V-5kF"/>
                 <outlet property="weizhiLabel" destination="8Qn-7K-72J" id="G8a-Ff-2WT"/>
             </connections>
-            <point key="canvasLocation" x="-880" y="115"/>
+            <point key="canvasLocation" x="-881.15942028985512" y="114.50892857142857"/>
         </view>
     </objects>
     <resources>

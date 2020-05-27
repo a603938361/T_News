@@ -54,10 +54,20 @@ struct UserDetail: HandyJSON{
     var share_url: String = ""
     
     var followers_count: Int = 0// 粉丝 470837
-    var followersCount: String { return String(followers_count) }
+    var followersCount: String {
+        if followers_count/1000 > 0 {
+            return String(followers_count/1000) + "万"
+        }
+        return String(followers_count)
+    }
     
     var followings_count: Int = 0 // 关注 3
-    var followingsCount: String { return String(followings_count) }
+    var followingsCount: String {
+        if followings_count/1000 > 0 {
+            return String(followings_count/1000) + "万"
+        }
+        return String(followings_count)
+    }
     
     var media_type: Int = 0
     
@@ -84,4 +94,34 @@ enum DongTaiType: String, HandyJSONEnum {
     case video = "video"                                // 视频
     case wenda = "wenda"                                // 问答
     case iesVideo = "ies_video"                         // 小视频
+}
+
+struct UDongtai: HandyJSON {
+    var device_model: String = ""
+    var ugc_cut_image_list: Array = [String]()
+    var modify_time: Int = 0
+    var share_url: String = ""
+    var rich_content: String = ""
+    var comments: Array = [String]()
+    var item_id: Int = 0
+    var open_url: String = ""
+    var forward_num: Int = 0
+    var forward_num_str: String{
+        return String(forward_num)
+    }
+    var comment_visible_count: Int = 0
+    var create_time: Int = 0
+    var comment_count: Int = 0
+    var comment_count_str: String {return String(comment_count)}
+    var read_count: Int = 0
+    var read_count_str: String {return String(read_count)}
+    var group = Group()
+}
+
+struct Group:HandyJSON {
+    var show_tips: String = ""
+    var title: String = ""
+    var open_url: String = ""
+    var image_url: String = ""
+    var media_type: Int = 0
 }

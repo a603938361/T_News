@@ -13,7 +13,7 @@ import SwiftyJSON
 protocol NetworkToolPro {
     //--------------- home -------------
     static func loadHomeNewsTitleData(completionHandler: @escaping (_ sections:[HomeNewsTitle])->())
-    static func loadUserDetailDongtaiList(userId: Int, maxCursor: Int, completionHandler: @escaping (_ cursor: Int,  _ dongtais:[UserDetailDongtai])->())
+    static func loadUserDetailDongtaiList(userId: Int, maxCursor: Int, completionHandler: @escaping (_ cursor: Int,  _ dongtais:[UDongtai])->())
 
     //--------------- mine -------------
 
@@ -29,7 +29,7 @@ extension NetworkToolPro{
 struct NetworkTool: NetworkToolPro{
     
     
-    static func loadUserDetailDongtaiList(userId: Int, maxCursor: Int, completionHandler: @escaping (_ cursor: Int,_ dongtais: [UserDetailDongtai]) -> ()){
+    static func loadUserDetailDongtaiList(userId: Int, maxCursor: Int, completionHandler: @escaping (_ cursor: Int,_ dongtais: [UDongtai]) -> ()){
         
         let url = BASE_URL + "/dongtai/list/v15/?"
         let params = ["user_id": userId,
@@ -41,15 +41,18 @@ struct NetworkTool: NetworkToolPro{
             switch res.result{
             case .success(let data):
                 let json = JSON(data)
+                print(json)
+
                 guard json["message"] == "success" else {return}
                 if let da = json["data"].dictionary {
-                    if let arr = da["data"]?.arrayValue{
-                        var detailArr = [UserDetailDongtai]()
+                    if let arr = da["data"]?.arrayObject{
+                        var detailArr = [UDongtai]()
                         for item in arr {
-                            
-                            let model = UserDetailDongtai.deserialize(from: item as? Dictionary)
-                            
+
+                            let model = UDongtai.deserialize(from: item as? Dictionary)
+                            detailArr.append(model!)
                         }
+                        completionHandler(0, detailArr)
                     }
                     
 //                    completionHandler(0, )

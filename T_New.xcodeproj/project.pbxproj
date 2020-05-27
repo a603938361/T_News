@@ -10,6 +10,11 @@
 		8517668D246681B700C5D56C /* MoreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8517668C246681B600C5D56C /* MoreLoginViewController.swift */; };
 		8517668F246681D800C5D56C /* MoreLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8517668E246681D800C5D56C /* MoreLoginViewController.storyboard */; };
 		851766912466A49E00C5D56C /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851766902466A49E00C5D56C /* SettingTableViewController.swift */; };
+		8519C18A247E047E00013E78 /* DingTaiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8519C188247E047E00013E78 /* DingTaiCell.swift */; };
+		8519C18B247E047E00013E78 /* DingTaiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8519C189247E047E00013E78 /* DingTaiCell.xib */; };
+		8519C18D247E164700013E78 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8519C18C247E164700013E78 /* Calculate.swift */; };
+		8519C190247E318800013E78 /* DongtaiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8519C18E247E318800013E78 /* DongtaiDetailViewController.swift */; };
+		8519C191247E318800013E78 /* DongtaiDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8519C18F247E318800013E78 /* DongtaiDetailViewController.xib */; };
 		856CB4162463AC9E00256C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856CB4142463AC9E00256C81 /* Main.storyboard */; };
 		856CB4182463ACA300256C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856CB4172463ACA300256C81 /* Assets.xcassets */; };
 		856CB41B2463ACA300256C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856CB4192463ACA300256C81 /* LaunchScreen.storyboard */; };
@@ -58,6 +63,11 @@
 		8517668C246681B600C5D56C /* MoreLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLoginViewController.swift; sourceTree = "<group>"; };
 		8517668E246681D800C5D56C /* MoreLoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoreLoginViewController.storyboard; sourceTree = "<group>"; };
 		851766902466A49E00C5D56C /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		8519C188247E047E00013E78 /* DingTaiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DingTaiCell.swift; sourceTree = "<group>"; };
+		8519C189247E047E00013E78 /* DingTaiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DingTaiCell.xib; sourceTree = "<group>"; };
+		8519C18C247E164700013E78 /* Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
+		8519C18E247E318800013E78 /* DongtaiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongtaiDetailViewController.swift; sourceTree = "<group>"; };
+		8519C18F247E318800013E78 /* DongtaiDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DongtaiDetailViewController.xib; sourceTree = "<group>"; };
 		856CB40B2463AC9E00256C81 /* T_New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T_New.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856CB4152463AC9E00256C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		856CB4172463ACA300256C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -316,6 +326,8 @@
 				85FC3512247B972900078568 /* SettingCell.xib */,
 				85FC3522247CB85B00078568 /* UserHeaderDetailView.swift */,
 				85FC3524247CB86200078568 /* UserHeaderDetailView.xib */,
+				8519C188247E047E00013E78 /* DingTaiCell.swift */,
+				8519C189247E047E00013E78 /* DingTaiCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -330,6 +342,8 @@
 				85FC3515247BB28700078568 /* OfflineTableViewController.swift */,
 				85FC351E247CB17900078568 /* UserDetailViewController.swift */,
 				85FC351F247CB17900078568 /* UserDetailViewController.xib */,
+				8519C18E247E318800013E78 /* DongtaiDetailViewController.swift */,
+				8519C18F247E318800013E78 /* DongtaiDetailViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -348,6 +362,7 @@
 		856CB45A2463F88C00256C81 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				8519C18C247E164700013E78 /* Calculate.swift */,
 				856CB45B2463FB4800256C81 /* NetworkTool.swift */,
 				85FC3528247D085400078568 /* UIKit+Extension.swift */,
 			);
@@ -424,6 +439,7 @@
 			files = (
 				856CB46224642C8D00256C81 /* MyOtherCell.xib in Resources */,
 				85FC3521247CB17900078568 /* UserDetailViewController.xib in Resources */,
+				8519C191247E318800013E78 /* DongtaiDetailViewController.xib in Resources */,
 				856CB4662464F12D00256C81 /* MyFollowCell.xib in Resources */,
 				856CB41B2463ACA300256C81 /* LaunchScreen.storyboard in Resources */,
 				856CB4182463ACA300256C81 /* Assets.xcassets in Resources */,
@@ -434,6 +450,7 @@
 				856CB4162463AC9E00256C81 /* Main.storyboard in Resources */,
 				856CB4742465452E00256C81 /* NoLoginHeaderView.xib in Resources */,
 				85FC3525247CB86200078568 /* UserHeaderDetailView.xib in Resources */,
+				8519C18B247E047E00013E78 /* DingTaiCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,11 +515,13 @@
 				856CB45E24640DD900256C81 /* MyCellModel.swift in Sources */,
 				856CB45C2463FB4800256C81 /* NetworkTool.swift in Sources */,
 				856CB4562463F5E600256C81 /* Consts.swift in Sources */,
+				8519C18A247E047E00013E78 /* DingTaiCell.swift in Sources */,
 				856CB4722465452200256C81 /* NoLoginHeaderView.swift in Sources */,
 				85FC3520247CB17900078568 /* UserDetailViewController.swift in Sources */,
 				856CB46A2464F8DD00256C81 /* UITableView+Extension.swift in Sources */,
 				85FC3518247BB38400078568 /* HomeNewsTitle.swift in Sources */,
 				856CB4522463E2E900256C81 /* TabBarController.swift in Sources */,
+				8519C18D247E164700013E78 /* Calculate.swift in Sources */,
 				856CB4592463F68F00256C81 /* UIColor+Extension.swift in Sources */,
 				85FC352B247D12A700078568 /* UserDetailDongtai.swift in Sources */,
 				856CB44F2463E2E900256C81 /* AppDelegate.swift in Sources */,
@@ -516,6 +535,7 @@
 				856CB46124642C8D00256C81 /* MyOtherCell.swift in Sources */,
 				856CB44E2463E2E900256C81 /* MyTabbar.swift in Sources */,
 				85FC3510247B72DD00078568 /* SettingModel.swift in Sources */,
+				8519C190247E318800013E78 /* DongtaiDetailViewController.swift in Sources */,
 				85FC3527247CDBAD00078568 /* UserDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,13 +682,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ARJ6CAR26;
 				INFOPLIST_FILE = T_New/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.T-New";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taiwu.zhaofangban;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -681,13 +702,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ARJ6CAR26;
 				INFOPLIST_FILE = T_New/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.T-New";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taiwu.zhaofangban;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

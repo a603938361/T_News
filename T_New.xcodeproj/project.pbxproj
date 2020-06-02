@@ -42,6 +42,7 @@
 		856CB47024652CB000256C81 /* MyConcernCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856CB46E24652CAE00256C81 /* MyConcernCell.xib */; };
 		856CB4722465452200256C81 /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CB4712465452200256C81 /* NoLoginHeaderView.swift */; };
 		856CB4742465452E00256C81 /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856CB4732465452E00256C81 /* NoLoginHeaderView.xib */; };
+		85D6832C24864EAB00BFDCB2 /* HuoShanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D6832B24864EAB00BFDCB2 /* HuoShanModel.swift */; };
 		85FC350E247B6FC300078568 /* settingPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85FC350D247B6FC300078568 /* settingPlist.plist */; };
 		85FC3510247B72DD00078568 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC350F247B72DD00078568 /* SettingModel.swift */; };
 		85FC3513247B972900078568 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC3511247B972900078568 /* SettingCell.swift */; };
@@ -97,6 +98,7 @@
 		856CB46E24652CAE00256C81 /* MyConcernCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyConcernCell.xib; sourceTree = "<group>"; };
 		856CB4712465452200256C81 /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
 		856CB4732465452E00256C81 /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
+		85D6832B24864EAB00BFDCB2 /* HuoShanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuoShanModel.swift; sourceTree = "<group>"; };
 		85FC350D247B6FC300078568 /* settingPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = settingPlist.plist; sourceTree = "<group>"; };
 		85FC350F247B72DD00078568 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 		85FC3511247B972900078568 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 		856CB43C2463E2E900256C81 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				85D6832B24864EAB00BFDCB2 /* HuoShanModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				856CB46C2464F8F400256C81 /* UICollectionView+Extension.swift in Sources */,
 				856CB44C2463E2E900256C81 /* VideoViewController.swift in Sources */,
 				856CB4652464F12D00256C81 /* MyFollowCell.swift in Sources */,
+				85D6832C24864EAB00BFDCB2 /* HuoShanModel.swift in Sources */,
 				856CB4682464F8C800256C81 /* UIView+Extension.swift in Sources */,
 				856CB45E24640DD900256C81 /* MyCellModel.swift in Sources */,
 				856CB45C2463FB4800256C81 /* NetworkTool.swift in Sources */,

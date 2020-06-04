@@ -112,6 +112,7 @@ struct UDongtai: HandyJSON {
     var comment_visible_count: Int = 0
     var create_time: Int = 0
     var comment_count: Int = 0
+    
     var comment_count_str: String {return String(comment_count)}
     var read_count: Int = 0
     var read_count_str: String {return String(read_count)}

@@ -15,6 +15,8 @@
 		8519C18D247E164700013E78 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8519C18C247E164700013E78 /* Calculate.swift */; };
 		8519C190247E318800013E78 /* DongtaiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8519C18E247E318800013E78 /* DongtaiDetailViewController.swift */; };
 		8519C191247E318800013E78 /* DongtaiDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8519C18F247E318800013E78 /* DongtaiDetailViewController.xib */; };
+		8540BEDB2488C1D900E496F9 /* HuoShanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540BED92488C1D900E496F9 /* HuoShanCell.swift */; };
+		8540BEDC2488C1D900E496F9 /* HuoShanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8540BEDA2488C1D900E496F9 /* HuoShanCell.xib */; };
 		856CB4162463AC9E00256C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856CB4142463AC9E00256C81 /* Main.storyboard */; };
 		856CB4182463ACA300256C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856CB4172463ACA300256C81 /* Assets.xcassets */; };
 		856CB41B2463ACA300256C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856CB4192463ACA300256C81 /* LaunchScreen.storyboard */; };
@@ -69,6 +71,8 @@
 		8519C18C247E164700013E78 /* Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		8519C18E247E318800013E78 /* DongtaiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongtaiDetailViewController.swift; sourceTree = "<group>"; };
 		8519C18F247E318800013E78 /* DongtaiDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DongtaiDetailViewController.xib; sourceTree = "<group>"; };
+		8540BED92488C1D900E496F9 /* HuoShanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuoShanCell.swift; sourceTree = "<group>"; };
+		8540BEDA2488C1D900E496F9 /* HuoShanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HuoShanCell.xib; sourceTree = "<group>"; };
 		856CB40B2463AC9E00256C81 /* T_New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T_New.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856CB4152463AC9E00256C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		856CB4172463ACA300256C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -265,6 +269,8 @@
 		856CB43D2463E2E900256C81 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8540BED92488C1D900E496F9 /* HuoShanCell.swift */,
+				8540BEDA2488C1D900E496F9 /* HuoShanCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -453,6 +459,7 @@
 				856CB4162463AC9E00256C81 /* Main.storyboard in Resources */,
 				856CB4742465452E00256C81 /* NoLoginHeaderView.xib in Resources */,
 				85FC3525247CB86200078568 /* UserHeaderDetailView.xib in Resources */,
+				8540BEDC2488C1D900E496F9 /* HuoShanCell.xib in Resources */,
 				8519C18B247E047E00013E78 /* DingTaiCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +527,7 @@
 				856CB45C2463FB4800256C81 /* NetworkTool.swift in Sources */,
 				856CB4562463F5E600256C81 /* Consts.swift in Sources */,
 				8519C18A247E047E00013E78 /* DingTaiCell.swift in Sources */,
+				8540BEDB2488C1D900E496F9 /* HuoShanCell.swift in Sources */,
 				856CB4722465452200256C81 /* NoLoginHeaderView.swift in Sources */,
 				85FC3520247CB17900078568 /* UserDetailViewController.swift in Sources */,
 				856CB46A2464F8DD00256C81 /* UITableView+Extension.swift in Sources */,

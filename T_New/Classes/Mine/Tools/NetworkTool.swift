@@ -40,6 +40,7 @@ struct NetworkTool: NetworkToolPro{
                 let jsonData = JSON(data)
                 guard jsonData["message"] == "success" else {return}
                 guard let datas = jsonData["data"].array else {return}
+                
                 completionHandler(datas.compactMap {HuoShanModel.deserialize(from: $0["content"].string)})
             case .failure(let err):
                 print(err)

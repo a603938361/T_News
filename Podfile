@@ -12,6 +12,7 @@ target 'T_New' do
   pod 'SwiftyJSON'
   pod 'HandyJSON', '~> 5.0.2-beta'
   pod 'Kingfisher'
+  #pod 'KingfisherWebP'
   pod 'IBAnimatable'
   pod 'SwiftTheme'
   pod 'RxSwift'
